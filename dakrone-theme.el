@@ -154,7 +154,7 @@
  '(ediff-odd-diff-face-B ((t (:foreground "black" :background "#d3d3d3"))))
  '(ediff-odd-diff-face-C ((t (:foreground "white" :background "Grey"))))
  '(ediff-odd-diff-face-Ancestor ((t (:foreground "black" :background "#d3d3d3"))))
- '(header-line ((t (:foreground "white" :background "#262626"))))
+ '(header-line ((t (:foreground "grey90" :background "grey20"))))
  '(magit-item-highlight ((t (:background "#333333"))))
  '(magit-diff-add ((t (:foreground "green3" :background "#1a1a1a"))))
  '(magit-diff-del ((t (:foreground "red3" :background "#1a1a1a"))))

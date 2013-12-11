@@ -11,9 +11,15 @@
 (deftheme dakrone
   "dakrone's custom emacs theme")
 
+(defvar dakrone/background "#1a1a1a")
+
+(when (window-system)
+  (setq dakrone/background "#262626"))
+
 (custom-theme-set-faces
  'dakrone
- '(default ((t (:background "#1a1a1a"))))
+ `(default ((t (:foreground "#fff8dc" :background ,dakrone/background))))
+ ;;'(default ((t (:foreground "#fff8dc" :background "#1a1a1a"))))
  '(foreground-color ((t (:foreground "#fff8dc"))))
  ;; '(background-color . "#1a1a1a")
  ;; '(mouse-color . "black")

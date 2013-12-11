@@ -1,10 +1,20 @@
 ;;; dakrone-theme.el --- dakrone's custom dark theme
-;;; Commentary:
+;; Copyright (C) 2013 Lee Hinman
+
+;; Author: Lee Hinman <lee _AT_ writequit.org>
+;; URL: https://github.com/dakrone/dakrone-theme
 ;; Version: 0.0.1
-;; Keywords: themes
-;; Author: Lee Hinman (dakrone)
-;; Maintainer: Lee Hinman <lee@writequit.org>
+;; Keywords: color themes
 ;; This file is not part of GNU Emacs.
+
+;;; Commentary:
+;; A dark theme with lots of color
+;;
+;; To use, put the following in your Emacs config:
+;;
+;;   (load-theme 'dakrone t)
+;;
+;; Requires Emacs 24
 
 ;;; Code:
 

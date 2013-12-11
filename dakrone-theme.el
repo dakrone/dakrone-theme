@@ -45,7 +45,7 @@
  '(calendar-today-face ((t (:underline t))))
  '(holiday-face ((t (:background "red"))))
  '(show-paren-mismatch-face ((t (:foreground "white" :background "red"))))
- '(paren-face ((t (:foreground "brightblack"))))
+ '(paren-face ((t (:foreground "gray35"))))
  '(font-lock-comment-face ((t (:foreground "#656763"))))
  '(font-lock-string-face ((t (:foreground "#8AE234"))))
  ;;'(font-lock-keyword-face ((t (:foreground "#00ffff"))))

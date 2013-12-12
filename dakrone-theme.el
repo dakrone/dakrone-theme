@@ -184,7 +184,16 @@ Dark gray background with lots of greens, teals and blues.")
  '(powerline-active1 ((t (:foreground "grey90" :background "grey22"))))
  '(powerline-active2 ((t (:background "grey22"))))
  '(powerline-inactive1 ((t (:foreground "grey40" :background "grey90"))))
- '(powerline-inactive1 ((t (:foreground "grey40" :background "grey90")))))
+ '(powerline-inactive1 ((t (:foreground "grey40" :background "grey90"))))
+ '(clojure-parens ((t (:foreground "#696969"))))
+ '(clojure-braces ((t (:foreground "#696969"))))
+ '(clojure-brackets ((t (:foreground "#4682b4"))))
+ '(clojure-keyword ((t (:foreground "#729FCF"))))
+ '(clojure-namespace ((t (:foreground "#c476f1"))))
+ '(clojure-java-call ((t (:foreground "#008b8b"))))
+ '(clojure-special ((t (:foreground "#1BF21B"))))
+ '(clojure-double-quote ((t (:foreground "#1BF21B"))))
+ '(clojure-collapsed-fn ((t (:foreground "cyan")))))
 
 ;;;###autoload
 (when load-file-name

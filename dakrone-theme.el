@@ -22,15 +22,9 @@
   "Dakrone's dark background theme.
 Dark gray background with lots of greens, teals and blues.")
 
-(defvar dakrone/background "#1a1a1a")
-
-(when (window-system)
-  (setq dakrone/background "#262626"))
-
 (custom-theme-set-faces
  'dakrone
- `(default ((t (:foreground "#fff8dc" :background ,dakrone/background))))
- ;;'(default ((t (:foreground "#fff8dc" :background "#1a1a1a"))))
+ '(default ((t (:foreground "#fff8dc" :background "#1c1c1c"))))
  '(foreground-color ((t (:foreground "#fff8dc"))))
  ;; '(background-color . "#1a1a1a")
  ;; '(mouse-color . "black")

@@ -186,22 +186,6 @@ Dark gray background with lots of greens, teals and blues.")
  '(powerline-inactive1 ((t (:foreground "grey40" :background "grey90"))))
  '(powerline-inactive1 ((t (:foreground "grey40" :background "grey90")))))
 
-;; clojure-specific colors
-(defmacro dakrone/defclojureface (name color desc &optional others)
-  `(defface
-     ,name '((((class color)) (:foreground ,color ,@others)))
-     ,desc :group 'faces))
-
-(dakrone/defclojureface clojure-parens "#696969" "Clojure parens")
-(dakrone/defclojureface clojure-braces "#696969" "Clojure braces")
-(dakrone/defclojureface clojure-brackets "#4682b4" "Clojure brackets")
-(dakrone/defclojureface clojure-keyword "#729FCF" "Clojure keywords")
-(dakrone/defclojureface clojure-namespace "#c476f1" "Clojure namespace")
-(dakrone/defclojureface clojure-java-call "#008b8b" "Clojure Java calls")
-(dakrone/defclojureface clojure-special "#1BF21B" "Clojure special")
-(dakrone/defclojureface clojure-double-quote "#1BF21B" "Clojure special")
-(dakrone/defclojureface clojure-collapsed-fn "cyan" "Clojure special")
-
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path

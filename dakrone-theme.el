@@ -3,7 +3,7 @@
 
 ;; Author: Lee Hinman <lee _AT_ writequit.org>
 ;; URL: https://github.com/dakrone/dakrone-theme
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; Keywords: color themes
 ;; This file is not part of GNU Emacs.
 

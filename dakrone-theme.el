@@ -45,7 +45,7 @@
  '(bold ((t (:bold t))))
  '(italic ((t (:italic t))))
  '(bold-italic ((t (:bold t :italic t))))
- '(region ((t (:background "#696969"))))
+ '(region ((t (:background "#333333"))))
  '(secondary-selection ((t (:background "#262626"))))
  '(underline ((t (:underline t))))
  '(info-node ((t (:foreground "yellow" :bold t :italic t))))

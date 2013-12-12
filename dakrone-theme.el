@@ -19,7 +19,8 @@
 ;;; Code:
 
 (deftheme dakrone
-  "dakrone's custom emacs theme")
+  "Dakrone's dark background theme.
+Dark gray background with lots of greens, teals and blues.")
 
 (defvar dakrone/background "#1a1a1a")
 
@@ -186,34 +187,20 @@
  '(powerline-inactive1 ((t (:foreground "grey40" :background "grey90")))))
 
 ;; clojure-specific colors
-(defmacro defclojureface (name color desc &optional others)
+(defmacro dakrone/defclojureface (name color desc &optional others)
   `(defface
      ,name '((((class color)) (:foreground ,color ,@others)))
      ,desc :group 'faces))
 
-(defclojureface clojure-parens       "#696969"   "Clojure parens")
-(defclojureface clojure-braces       "#696969"   "Clojure braces")
-(defclojureface clojure-brackets     "#4682b4" "Clojure brackets")
-(defclojureface clojure-keyword      "#729FCF"   "Clojure keywords")
-(defclojureface clojure-namespace    "#c476f1"   "Clojure namespace")
-(defclojureface clojure-java-call    "#008b8b"   "Clojure Java calls")
-(defclojureface clojure-special      "#1BF21B"   "Clojure special")
-(defclojureface clojure-double-quote "#1BF21B"   "Clojure special")
-(defclojureface clojure-collapsed-fn "cyan"      "Clojure special")
-
-(defun tweak-clojure-syntax ()
-  "Tweaks syntax for Clojure-specific faces."
-  (mapcar (lambda (x) (font-lock-add-keywords nil x))
-          '((("#?['`]*(\\|)"       . 'clojure-parens))
-            (("#?\\^?{\\|}"        . 'clojure-brackets))
-            (("\\[\\|\\]"          . 'clojure-braces))
-            ((":\\w+"              . 'clojure-keyword))
-            (("nil\\|true\\|false\\|%[1-9]?" . 'clojure-special))
-            (("(\\(\\.[^ \n)]*\\|[^ \n)]+\\.\\|new\\)\\([ )\n]\\|$\\)" 1
-              'clojure-java-call)))))
-
-(add-hook 'clojure-mode-hook 'tweak-clojure-syntax)
-
+(dakrone/defclojureface clojure-parens "#696969" "Clojure parens")
+(dakrone/defclojureface clojure-braces "#696969" "Clojure braces")
+(dakrone/defclojureface clojure-brackets "#4682b4" "Clojure brackets")
+(dakrone/defclojureface clojure-keyword "#729FCF" "Clojure keywords")
+(dakrone/defclojureface clojure-namespace "#c476f1" "Clojure namespace")
+(dakrone/defclojureface clojure-java-call "#008b8b" "Clojure Java calls")
+(dakrone/defclojureface clojure-special "#1BF21B" "Clojure special")
+(dakrone/defclojureface clojure-double-quote "#1BF21B" "Clojure special")
+(dakrone/defclojureface clojure-collapsed-fn "cyan" "Clojure special")
 
 ;;;###autoload
 (when load-file-name

@@ -86,9 +86,8 @@ Dark gray background with lots of greens, teals and blues.")
  '(org-level-1 ((t (:bold t :foreground "#edd400" :height 1.2))))
  '(org-level-2 ((t (:bold t :foreground "#729FCF" :height 1.1))))
  '(org-level-3 ((t (:bold t :foreground "#00ffff" :height 1.0))))
- ;; (org-level-2 ((t (:bold nil :foreground "#edd400" :height 1.2))))
- ;; (org-level-3 ((t (:bold t :foreground "#6ac214" :height 1.0))))
- ;; (org-level-4 ((t (:bold nil :foreground "tomato" :height 1.0))))
+ '(org-block-background ((t (:background "#262626"))))
+
  ;; (org-date ((t (:underline t :foreground "magenta3"))))
  ;; (org-footnote  ((t (:underline t :foreground "magenta3"))))
  ;; (org-link ((t (:foreground "skyblue2" :background "#2e3436"))))
@@ -195,5 +194,9 @@ Dark gray background with lots of greens, teals and blues.")
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'dakrone)
+
+;; Local Variables:
+;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
+;; End:
 
 ;;; dakrone-theme.el ends here
